@@ -1,0 +1,37 @@
+import java.util.*;
+public class NewMISC {
+
+	public static String missingChar(String str, int n) {
+		boolean flag = false;
+		  //char [] a = str.toCharArray();
+		  char [] a = new char [str.length()-1];
+		  int length=str.length();
+		  int count =0;
+
+		for(int index = 0; index <length-1; index++){	
+		  if(index==n){
+		 a[index]=str.charAt(count+1);  
+		 flag = true;
+		  } else if(flag==true ){
+		   a[index]=str.charAt(count+1); 
+		  }else {
+			  a[index]=str.charAt(count); 
+			  
+		  }
+		  count++;
+		  System.out.println("run: "+ index);
+		  }
+		
+		   String b = new String(a);
+		  return b;
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner (System.in);
+		String str = in.nextLine();
+		int n = in.nextInt();
+		
+		System.out.println("out..."+missingChar(str,n));
+	}
+}
+
