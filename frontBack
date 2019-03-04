@@ -1,0 +1,10 @@
+	public String frontBack(String str) {
+		int n = str.length()-1;
+			if(str.length()==1||str.equals("")){
+		  return str;
+		}else{
+		String front = str.substring(str.length()-1);
+		String back = str.substring(0, 1);
+		return front + str.substring(1,n)+back;
+		}
+		}
