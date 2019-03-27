@@ -1,0 +1,14 @@
+public int sum2(int[] nums) {
+  int sum2=0;
+if (nums.length == 0){
+  return 0;
+}else if (nums.length==1){
+  sum2=nums[0];
+  return sum2;
+}else if(nums.length >=2){
+  for (int pos = 0; pos<2;pos++){
+    sum2+=nums[pos];
+  }
+}
+  return sum2;
+}
