@@ -1,0 +1,9 @@
+public int[] reverse3(int[] nums) {
+  int [] newArr = new int [3];
+  int count =0;
+  for(int pos = nums.length-1; pos>=0;pos--){
+    newArr[count]=nums[pos];
+    count++;
+  }
+  return newArr;
+}
