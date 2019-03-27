@@ -1,0 +1,13 @@
+public int[] rotateLeft3(int[] nums) {
+int [] newArr = new int [3];
+newArr[newArr.length-1]=nums[0];
+for(int pos =0; pos<nums.length-1;pos++){
+  newArr[pos]=nums[pos+1];
+}
+return newArr;
+}
+
+//Make last index of new arr the old arr [0].
+//make loop to add vals from old arr ie. [pos+1] takes vals from old arr ahead of new arr pos 
+//vals move left in new arr when entered
+//while less than last index bc last index already filled as always been the first val from old arr placed at end of new arr
